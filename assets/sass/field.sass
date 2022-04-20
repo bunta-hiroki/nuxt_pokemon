@@ -1,0 +1,39 @@
+
+body .field 
+  &.active
+    display: none
+  .fieldWrapper
+    position: relative
+    margin: 50px auto
+    overflow: hidden
+    border: 1px solid #333
+    .player
+      position: absolute
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      transition: .2s
+    ul
+      list-style: none
+      padding-left: 0
+      li
+        line-height: 1
+    .maptipWrapper
+      transition: .2s
+      position: absolute
+      > .maptip
+        display: grid
+        justify-content: center
+        > li > ul > li
+          $tipSize: 30px
+          height: $tipSize
+          background-image: url(~@/assets/img/maptip.png)
+          background-repeat: no-repeat
+          background-position: center
+      .people
+        li
+          position: absolute
+          background-size: contain
+          background-position: center
+          background-repeat: no-repeat
+          transition: .2s
