@@ -321,7 +321,7 @@ export default {
     // this.maptip = this.otherMap.homeTown.maptip
 
     document.addEventListener('keydown', e => {
-     if(Math.floor(Math.random() * 200) ===  1) {
+     if(Math.floor(Math.random() * 10) ===  1) {
        alert("ポケモンが現れた！！")
        document.querySelector('.pokemon').classList.add('active')
        document.querySelector('.field').classList.add('active')
